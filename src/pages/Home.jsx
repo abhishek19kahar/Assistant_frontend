@@ -23,7 +23,7 @@ function Home() {
 
   const handleLogOut = async () => {
     try {
-      await axios.get("http://localhost:5000/api/auth/logout", { withCredentials: true });
+      await axios.get("https://assistant-backend-tau.vercel.app/api/auth/logout", { withCredentials: true });
       setUserData(null);
       navigate("/signin");
     } catch (error) {
