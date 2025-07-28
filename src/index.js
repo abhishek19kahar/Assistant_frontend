@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UserContext from './context/UserContext.jsx'
+import { BrowserRouter } from 'react-router-dom';
+
+import 'react-toastify/ReactToastify.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <UserContext>
+      <App />
+    </UserContext>
+
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
