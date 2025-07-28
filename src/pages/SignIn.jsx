@@ -30,7 +30,7 @@ function SignIn() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/signin', {
+            const response = await axios.post('https://assistant-backend-tau.vercel.app/api/auth/signin', {
                 email,
                 password
             }, {
