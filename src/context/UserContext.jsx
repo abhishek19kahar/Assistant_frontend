@@ -11,7 +11,7 @@ function UserContext({ children }) {
 
   const handleCurrentUser = async () => {
     try {
-      const result = await axios.get('http://localhost:5000/api/user/current', {
+      const result = await axios.get('https://assistant-backend-tau.vercel.app/api/user/current', {
         withCredentials: true,
       });
       setUserData(result.data);
