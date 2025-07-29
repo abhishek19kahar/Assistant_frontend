@@ -39,7 +39,7 @@ function SignUp() {
         }
 
         try {
-            const response = await axios.post('https://assistant-backend-tau.vercel.app/api/auth/signup', {
+            const response = await axios.post('https://assistant-backend-5qny.onrender.com/api/auth/signup', {
                 name,
                 email,
                 password
