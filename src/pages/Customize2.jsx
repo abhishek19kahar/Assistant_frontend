@@ -21,7 +21,7 @@ function Customize2() {
             } else {
                 formData.append("imageUrl", selectedImage)
             }
-            const result = await axios.post("https://assistant-backend-tau.vercel.app/api/user/update", formData, { withCredentials: true })
+            const result = await axios.post("https://assistant-backend-5qny.onrender.com/api/user/update", formData, { withCredentials: true })
             console.log(result.data);
             setUserData(result.data);
         } catch (error) {
