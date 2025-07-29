@@ -30,7 +30,7 @@ function SignIn() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/signin', {
+            const response = await axios.post('https://assistant-backend-5qny.onrender.com/api/auth/signin', {
                 email,
                 password
             }, {
