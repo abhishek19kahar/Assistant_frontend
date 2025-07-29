@@ -30,7 +30,7 @@ function UserContext({ children }) {
 
     try {
       const result = await axios.post(
-        'http://localhost:5000/api/user/asktoassistant',
+        'https://assistant-backend-5qny.onrender.com/api/user/asktoassistant',
         { command },
         { withCredentials: true }
       );
