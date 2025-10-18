@@ -20,8 +20,8 @@ function Customize2() {
                 formData.append("assistantImage", backendImage)
             } else {
                 formData.append("imageUrl", selectedImage)
-            }
-            const result = await axios.post("https://assistant-backend-5qny.onrender.com/api/user/update", formData, { withCredentials: true })
+            } //https://assistant-backend-5qny.onrender.com
+            const result = await axios.post("https://assistantbackend-production-7039.up.railway.app/api/user/update", formData, { withCredentials: true })
             console.log(result.data);
             setUserData(result.data);
         } catch (error) {
