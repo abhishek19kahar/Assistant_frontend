@@ -38,8 +38,8 @@ function SignUp() {
             return handleError("Password must be at least 8 characters and include uppercase, lowercase, digit, and special character.");
         }
 
-        try {
-            const response = await axios.post('https://assistant-backend-5qny.onrender.com/api/auth/signup', {
+        try { // https://assistantbackend-production-7039.up.railway.app/
+            const response = await axios.post('https://assistantbackend-production-7039.up.railway.app/api/auth/signup', {
                 name,
                 email,
                 password
