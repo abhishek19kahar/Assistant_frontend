@@ -22,8 +22,8 @@ function Home() {
   const [history, setHistory] = useState([]);
 
   const handleLogOut = async () => {
-    try {
-      await axios.get("https://assistant-backend-5qny.onrender.com/api/auth/logout", { withCredentials: true });
+    try { //https://assistant-backend-5qny.onrender.com
+      await axios.get("https://assistantbackend-production-7039.up.railway.app/api/auth/logout", { withCredentials: true });
       setUserData(null);
       navigate("/signin");
     } catch (error) {
