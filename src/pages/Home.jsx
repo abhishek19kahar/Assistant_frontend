@@ -23,7 +23,7 @@ function Home() {
 
   const handleLogOut = async () => {
     try { //https://assistant-backend-5qny.onrender.com
-      await axios.get("https://assistantbackend-production-7039.up.railway.app/api/auth/logout", { withCredentials: true });
+      await axios.get("https://assistant-backend-5qny.onrender.com/api/auth/logout", { withCredentials: true });
       setUserData(null);
       navigate("/signin");
     } catch (error) {
