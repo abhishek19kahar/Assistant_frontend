@@ -10,8 +10,8 @@ function UserContext({ children }) {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleCurrentUser = async () => {
-    try {
-      const result = await axios.get('https://assistant-backend-5qny.onrender.com/api/user/current', {
+    try {  //https://assistant-backend-5qny.onrender.com
+      const result = await axios.get('https://assistantbackend-production-7039.up.railway.app/api/user/current', {
         withCredentials: true,
       });
       setUserData(result.data);
@@ -30,7 +30,8 @@ function UserContext({ children }) {
 
     try {
       const result = await axios.post(
-        'https://assistant-backend-5qny.onrender.com/api/user/asktoassistant',
+        //https://assistantbackend-production-7039.up.railway.app/
+        'https://assistantbackend-production-7039.up.railway.app/api/user/asktoassistant',
         { command },
         { withCredentials: true }
       );
