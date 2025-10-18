@@ -30,7 +30,7 @@ function SignIn() {
         }
 
         try { //https://assistant-backend-5qny.onrender.com
-            const response = await axios.post('https://assistant-backend-5qny.onrender.com/api/auth/signin', {
+            const response = await axios.post('https://assistantbackend-production-7039.up.railway.app/api/auth/signin', {
                 email,
                 password
             }, {
