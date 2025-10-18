@@ -11,7 +11,7 @@ function UserContext({ children }) {
 
   const handleCurrentUser = async () => {
     try {  //https://assistant-backend-5qny.onrender.com
-      const result = await axios.get('https://assistantbackend-production-7039.up.railway.app/api/user/current', {
+      const result = await axios.get('https://assistant-backend-5qny.onrender.com/api/user/current', {
         withCredentials: true,
       });
       setUserData(result.data);
@@ -31,7 +31,7 @@ function UserContext({ children }) {
     try {
       const result = await axios.post(
         //https://assistantbackend-production-7039.up.railway.app/
-        'https://assistantbackend-production-7039.up.railway.app/api/user/asktoassistant',
+        'https://assistant-backend-5qny.onrender.com/api/user/asktoassistant',
         { command },
         { withCredentials: true }
       );
